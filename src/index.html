@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pixar Memory Match</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Pixar Memory Match</title>
-  <link rel="stylesheet" href="style.css">
-  
-</head>
+  <body>
+    <audio controls autoplay loop>
+      <source src="audio/toy-story.mp3" />
+    </audio>
+    <div id="root">
+      <iframe
+        src="https://giphy.com/embed/yvya8Yi18YoX66tdCx"
+        width="280"
+        height="135"
+        frameborder="0"
+        class="sticker"
+        allowfullscreen
+      ></iframe>
+      <p></p>
 
-<body>
-  <audio controls autoplay loop>
-    <source src="audio/toy-story.mp3"  >
-  </audio>
-  <div id="root">
-   
+      <div class="boton">
+        <button class="instrucciones">¿Cómo jugar?</button>
+      </div>
+    </div>
 
-
-
-  </div>
-
-
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
