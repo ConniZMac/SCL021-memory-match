@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Pixar Memory Match</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,12 +20,24 @@
         class="sticker"
         allowfullscreen
       ></iframe>
-      <p></p>
-
-      <div class="boton">
-        <button class="instrucciones">¿Cómo jugar?</button>
-      </div>
     </div>
+
+    <div class="boton">
+      <button class="instrucciones">¿Cómo jugar?</button>
+      <dialog class="popup" id="popup">
+        <p>
+          El jugador debe darle click a 2 imagenes, si coinciden y tienen la
+          misma imagen, estas quedan con la imagen visible y sigue presionando
+          otras dos. Y si por el contrario no coinciden estas automaticamente
+          vuelven a su posición inicial
+        </p>
+        <button class="boton2">Vamos a jugar</button>
+
+        
+      </dialog>
+    </div>
+
+    <div class="intentos"></div>
 
     <script src="main.js" type="module"></script>
   </body>
