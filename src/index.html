@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Pixar Memory Match</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <audio controls autoplay loop>
-      <source src="audio/toy-story.mp3" />
-    </audio>
-    <div id="root">
-      <iframe
-        src="https://giphy.com/embed/yvya8Yi18YoX66tdCx"
-        width="280"
-        height="135"
-        frameborder="0"
-        class="sticker"
-        allowfullscreen
-      ></iframe>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Pixar Memory Match</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div class="boton">
-      <button class="instrucciones">¿Cómo jugar?</button>
-      <dialog class="popup" id="popup">
-        <p>
-          El jugador debe darle click a 2 imagenes, si coinciden y tienen la
-          misma imagen, estas quedan con la imagen visible y sigue presionando
-          otras dos. Y si por el contrario no coinciden estas automaticamente
-          vuelven a su posición inicial
-        </p>
-        <button class="boton2">Vamos a jugar</button>
-
+<body>
+  <div class="container1">
+    <!--Acá comienza lado izquiedo -->
+    <div>
+      <div class="inicio">
+        <h1>.</h1>
+        <audio class="musica" controls loop src="./audio/toy-story.mp3"></audio>
+        <iframe src="https://giphy.com/embed/yvya8Yi18YoX66tdCx" width="250" height="115" frameborder="0"
+          class="sticker" allowfullscreen></iframe>
+      </div>
+      <div class="boton">
+        <button class="instrucciones">¿Cómo jugar?</button>
+        <dialog class="popup" id="popup">
+          <p>
+            El jugador debe darle click a 2 imagenes, si coinciden y tienen la
+            misma imagen, estas quedan con la imagen visible y sigue
+            presionando otras dos. Y si por el contrario no coinciden estas
+            automaticamente vuelven a su posición inicial
+          </p>
+          <button class="boton2">Vamos a jugar</button>
+        </dialog>
+      </div>
+      <div class="intentos"></div>
+      <!--Ganaste -->
+      <section id="you-win">
         
-      </dialog>
+          <img src="img/disneywin.gif" alt="ganaste" />
+          <div class="buttonReplay">
+            <button type="button" class="buttonReplay" onclick="location.href='index.html';">
+              Volver a jugar
+            </button>
+          </div>
+        
+      </section>
     </div>
+    <!--Acá se lle -->
+    <!--Perdiste -->
+    <section id="you-lose">
 
-    <div class="intentos"></div>
+      <img src="img/cry.gif" alt="--Perdiste" />
+      <div class="buttonReplay2">
+        <button type="button" class="buttonReplay2" onclick="location.href='index.html';">
+          Volver a Intentarlo
+        </button>
+      </div>
 
-    <script src="main.js" type="module"></script>
-  </body>
+    </section>
+  </div>
+  <!--Acá se lle -->
+  <div id="root"></div>
+
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
