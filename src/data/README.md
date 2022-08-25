@@ -7,7 +7,7 @@ El jugador debe darle click a 2 imagenes, si coinciden y tienen la
 
 
 
-### Investigación de usuario.md
+### Investigación de usuario
 Creamos una encuesta online que se envió a posibles usuarios de nuestro Juego. En ella incluimos las siguientes preguntas (y sus resultados):
 
 
@@ -27,7 +27,7 @@ Creamos una encuesta online que se envió a posibles usuarios de nuestro Juego. 
 
 
 ###Despliegue de la página
-Para poder ver nuestro Resultado final del juego, se puede acceder a nuestra página haciendo click  [aqui](https://paulaamigo.github.io/SCL021-memory-match/)
+Para poder ver nuestro Resultado final del juego, se puede acceder a nuestra página haciendo click  [aqui]( https://connizmac.github.io/SCL021-memory-match/)
 
 
 
