@@ -1,38 +1,34 @@
-# Data (sets de cartas)
+# Memory Match
+Es un juego diseñado para niños que pone en dasfio su destreza mental.
+El jugador debe darle click a 2 imagenes, si coinciden y tienen la
+ misma imagen, estas quedan con la imagen visible y sigue
+  presionando otras dos. Y si por el contrario no coinciden estas
+   automaticamente vuelven a su posición inicial
 
-Este directorio (carpeta) contiene dos fuentes de datos (sets de cartas) que
-podemos usar en el proyecto. Cada set está en una sub-carpeta distinta:
 
-* [`pokemon`](./pokemon)
-* [`webdev`](./webdev)
 
-Dentro de cada carpeta encontrarás dos archivos: uno con la extensión `.js` y
-otro `.json`. Ambos archivos contienen la misma data; la diferencia es que el
-`.js` lo usaremos a través de un [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import),
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API).
+### Investigación de usuario
+Creamos una encuesta online que se envió a posibles usuarios de nuestro Juego. En ella incluimos las siguientes preguntas (y sus resultados):
 
-## ¿Cómo agrego mis propios sets de cartas?
 
-Éstas no son las únicas cartas que podemos usar. Si quieres puedes añadir los
-sets de cartas que consideres para tu aplicación. Si eliges agregar sets de
-cartas te recomendamos mantener la misma estructura de los datos (ambos sets de
-ejemplo usan la misma estructura).
 
-Por ejmplo, imaginemos que queremos agregar un set de cartas de gatitos. Para
-hacernos la vida más fácil, dupliquemos un set existente y modifiquémoslo:
+![]([https://i.ibb.co/SQjg2GY/Usuario.png)
+![](https://i.ibb.co/Qjmb909/Captura-de-Pantalla-2022-08-16-a-la-s-09-59-12.png)
+![](https://i.ibb.co/hfxSJS4/Captura-de-Pantalla-2022-08-16-a-la-s-09-58-50.png)
+![](https://i.ibb.co/p0pJG9V/Captura-de-Pantalla-2022-08-16-a-la-s-09-58-22.png)
+![](https://i.ibb.co/H2TsnrX/Captura-de-Pantalla-2022-08-16-a-la-s-09-57-51.png)
+![](https://i.ibb.co/tJYVxjD/Captura-de-Pantalla-2022-08-16-a-la-s-09-57-23.png)
 
-```sh
-# Desde el directorio raíz de la aplicación en el terminal, copiamos
-# recursivamente (con la opción `-r`, ya que se trata de un directorio) el
-# directorio `data/pokemon` a la ruta `data/gatitos`.
-cp -r data/pokemon data/gatitos
+###Historia de usuario.md
+-Con la investigación nos dimos cuenta que a los usuarios les gustaría que el juego incluyera musica especificamente el tema central de Toy Story.
+- Tambien les gustaría que el juego tenga intentos y que estos no sean más que 5.
 
-# Renombramos los archivos de la carpeta gatitos...
-mv data/gatitos/pokemon.js data/gatitos/gatitos.js
-mv data/gatitos/pokemon.json data/gatitos/gatitos.json
-```
 
-Ahora ya puedes editar el contenido de los archivos de gatitos según tus
-necesidades. Ten en cuenta que puedes cambiar el número de elementos (cartas) en
-cada set si quieres también cambiar la dificultad del juego :wink:.
+
+
+###Despliegue de la página
+Para poder ver nuestro Resultado final del juego, se puede acceder a nuestra página haciendo click  [aqui]( https://connizmac.github.io/SCL021-memory-match/)
+
+
+
+Fin
